@@ -22,3 +22,4 @@ Ok to proceed? (y) y
 
 
 PS C:\react\react-hook-form-zod-typescript> npm install zod
+PS C:\react\react-hook-form-zod-typescript> npm install react-hook-form

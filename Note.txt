@@ -3,6 +3,8 @@ Typescript & Zod tutorial with React-Hook-Form
 
 https://github.com/gitdagray/zod-typescript-react-hook-form
 https://github.com/Annie-Huang/react-hook-form-zod-typescript
+
+https://jsonplaceholder.typicode.com/users
 ======================================================================================
 
 PS C:\react> npm create vite@latest

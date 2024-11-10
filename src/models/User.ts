@@ -35,3 +35,27 @@ export const BasicUserSchema = z.object({
     catchPhrase: z.string().optional(),
   }),
 });
+
+const UserAddressSchema = z.object({
+  street: z
+    .string()
+    .trim()
+    .min(5, { message: 'Street must be 5 or more characters long' }),
+  suite: z.string().trim().optional(),
+  city: z
+    .string()
+    .trim()
+    .min(2, { message: 'City must be 2 or more characters long' }),
+  zipcode: z.string().regex(/^\d{5}(?:[-\s]\d{4})?$/, {
+    message: 'Must be 5 digit zip. Optional 4 digit extension allowed.',
+  }),
+});
+
+const UserAddressSchemaWithGeo = UserAddressSchema.extend({
+  geo: z.object({
+    lat: z.string(),
+    lng: z.string(),
+  }),
+});
+
+const HasIDSchema = z.object({ id: z.number().int().positive() });

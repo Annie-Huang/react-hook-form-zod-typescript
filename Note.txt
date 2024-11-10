@@ -25,3 +25,5 @@ PS C:\react\react-hook-form-zod-typescript> npm install zod
 PS C:\react\react-hook-form-zod-typescript> npm install react-hook-form
 PS C:\react\react-hook-form-zod-typescript> npm install @hookform/resolvers
 PS C:\react\react-hook-form-zod-typescript> npm install -D tailwindcss
+
+PS C:\react\react-hook-form-zod-typescript> npx tailwindcss init

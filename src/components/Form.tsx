@@ -1,7 +1,10 @@
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { UserSchemaWithAddress } from '../models/User';
-import type { UserWithAddress } from '../models/User';
+
+// import { UserSchemaWithAddress } from '../models/User';
+import { UserFormSchemaWithAddress } from '../models/User';
+// import type { UserWithAddress } from '../models/User';
+import type { UserFormWithAddress } from '../models/User';
 
 export default function Form() {
   const {
@@ -9,16 +12,17 @@ export default function Form() {
     handleSubmit,
     trigger,
     formState: { errors, isValid },
-  } = useForm<UserWithAddress>({
-    resolver: zodResolver(UserSchemaWithAddress),
+  } = useForm<UserFormWithAddress>({
+    resolver: zodResolver(UserFormSchemaWithAddress),
   });
 
-  const onSubmit: SubmitHandler<UserWithAddress> = (data) => {
+  const onSubmit: SubmitHandler<UserFormWithAddress> = (data) => {
     console.log(data.name);
     console.log(data);
   };
 
-  console.log(isValid);
+  console.log('isValid=', isValid);
+  console.log('errors=', errors);
 
   return (
     <>

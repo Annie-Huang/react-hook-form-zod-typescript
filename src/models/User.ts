@@ -18,7 +18,9 @@ export const BasicUserSchema = z.object({
     .min(10, { message: 'Phone numbers are a minimum of 10 digits' }),
   // .regex(/^[0-9]+$/, { message: "Only numbers are allowed" })
   // .length(10, { message: "Ten numbers are required" })
-  // .transform(val => `${val.slice(0, 3)}-${val.slice(3, 6)}-${val.slice(6)}`),
+  // .transform(
+  //   (val) => `${val.slice(0, 3)}-${val.slice(3, 6)}-${val.slice(6)}`,
+  // ), // when you add this, it will transform to the correct form when we submitted the form to backend. But we are not changing in the UI
   //website: z.string().trim().toLowerCase().url().optional(),
   website: z
     .string()

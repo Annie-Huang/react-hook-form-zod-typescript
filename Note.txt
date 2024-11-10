@@ -3,7 +3,7 @@ Typescript & Zod tutorial with React-Hook-Form
 
 https://github.com/gitdagray/zod-typescript-react-hook-form
 https://github.com/Annie-Huang/react-hook-form-zod-typescript
-------------------------------------------------------------------------------------------
+======================================================================================
 
 PS C:\react> npm create vite@latest
 Need to install the following packages:
@@ -17,3 +17,8 @@ Ok to proceed? (y) y
 √ Project name: ... react-hook-form-zod-typescript
 √ Select a framework: » React
 √ Select a variant: » TypeScript
+
+-------------
+
+
+PS C:\react\react-hook-form-zod-typescript> npm install zod

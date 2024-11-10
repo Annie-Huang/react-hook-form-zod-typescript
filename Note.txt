@@ -1,0 +1,19 @@
+Typescript & Zod tutorial with React-Hook-Form
+(https://www.youtube.com/watch?v=JZjUv_qFtvM)
+
+https://github.com/gitdagray/zod-typescript-react-hook-form
+https://github.com/Annie-Huang/react-hook-form-zod-typescript
+------------------------------------------------------------------------------------------
+
+PS C:\react> npm create vite@latest
+Need to install the following packages:
+create-vite@5.5.5
+Ok to proceed? (y) y
+
+
+> npx
+> create-vite
+
+√ Project name: ... react-hook-form-zod-typescript
+√ Select a framework: » React
+√ Select a variant: » TypeScript

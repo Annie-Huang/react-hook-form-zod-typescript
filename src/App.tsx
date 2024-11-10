@@ -1,7 +1,7 @@
 import Form from './components/Form';
 import fetchUsers from './lib/fetchUsers';
 
-// fetchUsers()
+fetchUsers();
 
 function App() {
   return (

@@ -59,3 +59,16 @@ const UserAddressSchemaWithGeo = UserAddressSchema.extend({
 });
 
 const HasIDSchema = z.object({ id: z.number().int().positive() });
+
+export const UserSchemaWithAddress = BasicUserSchema.extend({
+  address: UserAddressSchema,
+}).merge(HasIDSchema);
+
+// !!!! Geo includes Address as well
+export const UserSchemaWithGeo = BasicUserSchema.extend({
+  address: UserAddressSchemaWithGeo,
+}).merge(HasIDSchema);
+
+export type UserWithAddress = z.infer<typeof UserSchemaWithAddress>;
+
+export type UserWithGeo = z.infer<typeof UserSchemaWithGeo>;

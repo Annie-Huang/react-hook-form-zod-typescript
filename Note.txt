@@ -5,6 +5,10 @@ https://github.com/gitdagray/zod-typescript-react-hook-form
 https://github.com/Annie-Huang/react-hook-form-zod-typescript
 
 https://jsonplaceholder.typicode.com/users
+
+https://tailwindcss.com/docs/installation                   <--- this one does not work, use the next one instead
+https://tailwindcss.com/docs/installation/using-postcss
+
 ======================================================================================
 
 PS C:\react> npm create vite@latest
@@ -30,6 +34,8 @@ PS C:\react\react-hook-form-zod-typescript> npm install -D tailwindcss
 
 PS C:\react\react-hook-form-zod-typescript> npx tailwindcss init
 
+https://tailwindcss.com/docs/installation/using-postcss
+PS C:\react\react-hook-form-zod-typescript> npm install -D tailwindcss postcss autoprefixer
 
 ------------------------
 jsonplaceholder for users, e.g.
